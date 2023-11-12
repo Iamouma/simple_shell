@@ -50,14 +50,20 @@ int main(void)
 			cd(args[1]);
 
 			free(args);
-			continue;
 		}
+		return (0);
+	}
+}
+
+int main(void)
+{
 
 		args = parse_input(input);
 
 		if (args[0] != NULL && args[0][0] != '\0')
 		{
 			pid = fork();
+
 
 			if (pid == -1)
 			{
