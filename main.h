@@ -12,7 +12,7 @@
 #include <unistd.h>
 
 
-#define BUFFER_SIZE 4096
+#define BUFFER_SIZE 256
 /**
  * struct character_print - prints the data.
  * @c: character.
@@ -37,6 +37,10 @@ int bn(va_list args);
 void sigint_handler(int sig);
 void cd(char *dir);
 char **parse_input(char *input);
-
+int main(void);
+void show_prompt(void);
+void exit_command(const char *input);
+void run_command(char **args);
+void run_shell(void);
 
 #endif
