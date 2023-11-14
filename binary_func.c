@@ -13,3 +13,27 @@ int df(va_list args)
 
 	return (n);
 }
+
+/**
+ * print_dif - prints signed integers.
+ * @len: integer to be printed.
+ * @n: length of integer to be printed.
+ * Return: length of the integer.
+ */
+int print_dif(long int len, long int n)
+{
+	if (len < 0)
+	{
+		_putchar('-');
+		len = -len;
+		n++;
+	}
+	if (len / 10)
+	{
+		n = print_dif(len / 10, n++);
+	}
+	_putchar(len % 10 + '0');
+	n++;
+
+	return (n);
+}
