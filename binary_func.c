@@ -52,3 +52,27 @@ int dcc(va_list args)
 
 	return (n);
 }
+
+/**
+ * print_dig_c - prints unsigned integers.
+ * @len: integer to be printed.
+ * @n: lenght of integer.
+ * Return: length of integer.
+ */
+int print_dig_c(long int len, long int n)
+{
+	if (len < 0)
+	{
+		len = -len;
+		n++;
+	}
+
+	if (len / 10)
+	{
+		n = print_dig_c(len / 10. n++);
+	}
+	_putchar(len % 10 + '0');
+	n++;
+
+	return (n);
+}
