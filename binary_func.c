@@ -2,7 +2,7 @@
 /**
  * df - picks integer value and calls function to print.
  * @args: list of arguments.
- * @Return: length of integer.
+ * Return: length of integer.
  */
 int df(va_list args)
 {
