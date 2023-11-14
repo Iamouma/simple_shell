@@ -37,3 +37,18 @@ int print_dif(long int len, long int n)
 
 	return (n);
 }
+
+/**
+ * dcc - picks integer value and calls function to print.
+ * @args: list of arguments.
+ * Return: length of integer.
+ */
+int dcc(va_list args)
+{
+	long int len = va_arg(args, int);
+	long int n;
+
+	n = print_dig_c(len, 0);
+
+	return (n);
+}
