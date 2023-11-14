@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * bn - turns binary to integer.
  * @args: list of arguments.
