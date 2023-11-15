@@ -17,7 +17,7 @@ void show_prompt(void)
 {
 	if (getpid() == getpgrp())
 	{
-		write(STDOUT_FILENO, "# ", 2);
+		write(STDOUT_FILENO, "> ", 2);
 		fflush(stdout);
 	}
 }

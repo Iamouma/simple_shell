@@ -69,7 +69,7 @@ int print_dig_c(long int len, long int n)
 
 	if (len / 10)
 	{
-		n = print_dig_c(len / 10. n++);
+		n = print_dig_c(len / 10, n++);
 	}
 	_putchar(len % 10 + '0');
 	n++;
